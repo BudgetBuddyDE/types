@@ -1,6 +1,6 @@
-import {HTTPStatusCode} from './HttpStatusCode.type';
+import {HTTPStatusCode} from './HttpStatusCode.enum';
 
-export type TApiResponse<T> = {status: 200 | HTTPStatusCode.Ok; message: null; data: T | null} & {
+export type TApiResponse<T> = {status: 200 | HTTPStatusCode.OK; message: null; data: T | null} & {
   status: number | HTTPStatusCode;
   message: string | null;
   data: T | null;
